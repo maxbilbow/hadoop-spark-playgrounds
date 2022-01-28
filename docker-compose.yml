@@ -1,0 +1,16 @@
+version: "1"
+services:
+  spark:
+    container_name: spark-playground
+    build: ./spark
+    ports:
+      - "4040:4040"
+      - "7077:7077"
+      - "6066:6066"
+    volumes:
+       - ./spark/workspace:/workspace
+  hadoop:
+    container_name: hadoop-playground
+    build: ./hadoop
+    volumes:
+      - ./hadoop/workspace:/workspace
