@@ -8,9 +8,16 @@ services:
       - "7077:7077"
       - "6066:6066"
     volumes:
-       - ./spark/workspace:/workspace
+       - ./app/spark:/workspace
   hadoop:
     container_name: hadoop-playground
     build: ./hadoop
     volumes:
-      - ./hadoop/workspace:/workspace
+      - ./app/hadoop:/workspace
+  jupyter:
+    container_name: jupyter-playground
+    image: jupyter/pyspark-notebook
+    ports:
+      - 8889:8888
+    volumes:
+      - ./app/jupyter:/home/jovyan/work

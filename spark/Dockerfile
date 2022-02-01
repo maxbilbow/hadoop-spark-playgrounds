@@ -1,6 +1,6 @@
 FROM ubuntu:latest as builder
 
-RUN apt-get update && apt-get install -y wget default-jdk-headless
+RUN apt-get update && apt-get install -y wget default-jdk-headless pip
 
 ENV SPARK_VERSION=3.2.0
 ENV HADOOP_VERSION=3.2
