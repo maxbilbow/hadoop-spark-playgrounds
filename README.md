@@ -1,5 +1,11 @@
+## Prerequisites
+
+Install [Docker](https://docker.com/get-started)
+
 ## Getting Started
-1. Install [Docker](https://www.docker.com/get-started)
+
+1. Clone this repo, open a terminal, and navigate to its location. 
+
 2.  Build and run the containers
 ```shell
 docker-compose up -d
