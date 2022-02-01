@@ -4,7 +4,7 @@ Install [Docker](https://docker.com/get-started)
 
 ## Getting Started
 
-1. Clone this repo, open a terminal, and navigate to its location. 
+1. Download this repo, open a terminal, and navigate to its location. 
 
 2.  Build and run the containers
 ```shell
